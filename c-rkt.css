@@ -1,0 +1,155 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#dialogbox {
+  display: none;
+  position: fixed;
+  width: 600px;
+  z-index: 999;
+  border-radius: 20px;
+  background-image: url(./confirm.png);
+}
+#wrapper {
+  display: none;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 998;
+  border-radius: 20px;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+#yes {
+  font-size: 22px;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  border-bottom-width: 10px;
+  border-color: rgb(255, 0, 0, 1);
+}
+
+#no {
+  font-size: 22px;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  border-bottom-width: 10px;
+  border-color: rgb(0, 255, 0, 1);
+}
+
+.header {
+  background-color: "lightblue";
+  color: black;
+  font-size: 35px;
+  padding: 10px;
+  margin: 0px 10px 10px 10px;
+}
+
+.footer {
+  padding: 5px;
+  border: 0px;
+}
+
+body {
+  font-family: 'Alegreya SC';
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+  background-image: url(./bg.jpeg);
+  background-size: cover;
+}
+.table{
+  padding-top: 30px;
+}
+table {
+  position: relative;
+  min-width: 40%;
+  min-height: 100%;
+  border: 2px solid white;
+  empty-cells: show;
+}
+
+td {
+  border: 1px solid white;
+  height: 100px;
+  width: 50px;
+  text-align: center;
+  font-size: 50px;
+  color: red;
+  border: 2px solid white;
+}
+
+.container {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.reset {
+  padding-top: 10px;
+  position: relative;
+  padding-left: 100px;
+  padding-right: 50px;
+}
+
+.ins {
+  padding-top: 10px;
+}
+
+.txt {
+  padding: 0px;
+  color: white;
+
+}
+
+#reset {
+  border-radius: 40px;
+  width: 100px;
+  height: 60px;
+  font-size: 120%;
+  border-bottom-width: 10px;
+}
+#reset:hover{
+  background-color: grey;
+}
+
+#ins {
+  border-radius: 40px;
+  width: 140px;
+  height: 60px;
+  font-size: 120%;
+  border-bottom-width: 10px;
+}
+#ins:hover{
+  background-color: grey;
+}
