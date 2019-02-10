@@ -16,6 +16,20 @@ html {
   border-radius: 20px;
   background-image: url(./confirm.png);
 }
+#dred{display: none;
+position: fixed;
+width: 600px;
+z-index: 999;
+border-radius: 20px;
+background-image: url(./confirm.png);
+}
+#dgreen{display: none;
+position: fixed;
+width: 600px;
+z-index: 999;
+border-radius: 20px;
+background-image: url(./confirm.png);
+}
 #wrapper {
   display: none;
   position: fixed;
@@ -25,12 +39,38 @@ html {
   border-radius: 20px;
 background-color: rgba(0, 0, 0, 0.5);
 }
+#wrapper2 {
+  display: none;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 998;
+  border-radius: 20px;
+background-color: rgba(0, 0, 0, 0.5);
+}
+#wrapper3 {
+  display: none;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 998;
+  border-radius: 20px;
+background-color: rgba(0, 0, 0, 0.5);
+}
+.redbtn{
+  padding-left: 240px;
+}
+.greenbtn{
+  padding-left: 240px;
+}
 
 .btns {
   display: flex;
   justify-content: space-around;
   padding-bottom: 20px;
 }
+
+
 
 #yes {
   font-size: 22px;

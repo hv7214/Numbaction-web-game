@@ -1,18 +1,6 @@
 var td = document.querySelectorAll("td");
 
 
-var ar = new Array(6);
-for (var k = 0; k < 9; k++)
-  ar[k] = new Array(9);
-
-var ti = 0;
-
-for (var i = 0; i < 9; i++) {
-  for (var j = 0; j < 6; j++) {
-    ar[i][j] = td[ti];
-    ti++;
-  }
-}
 
 for (var i = 0; i < 54; i++)
   td[i].textContent = '';
@@ -28,26 +16,55 @@ dbx.style.top = "400px";
 var wrapperdb = document.getElementById("wrapper");
 wrapperdb.style.width = window.innerWidth + "px";
 wrapperdb.style.height = window.innerHeight + "px";
+var wrapperdb2 = document.getElementById("wrapper2");
+wrapperdb.style.width = window.innerWidth + "px";
+wrapperdb.style.height = window.innerHeight + "px";
+var wrapperdb3 = document.getElementById("wrapper3");
+wrapperdb.style.width = window.innerWidth + "px";
+wrapperdb.style.height = window.innerHeight + "px";
+
+var green = document.getElementById("dgreen");
+green.style.left = window.innerWidth / 2 - 300 + "px";
+green.style.top = "400px";
+
+var red = document.getElementById("dred");
+red.style.left = window.innerWidth / 2 - 300 + "px";
+red.style.top = "400px";
 
 function ins() {
   window.open('./ins.html', '_blank');
 }
 
+function redw() {
+  red.style.display = "block";
+  wrapperdb2.style.display = "block";
+}
+
+function greenw() {
+  green.style.display = "block";
+  wrapperdb3.style.display = "block";
+  console.log("green");
+}
+
 function reset() {
+  red.style.display = "none";
+  green.style.display = "none";
+  wrapperdb2.style.display = "none";
+  wrapperdb3.style.display = "none";
   dbx.style.display = "block";
   wrapperdb.style.display = "block";
 }
 
-function yes() {
+function yes() {chance =0;
   for (var i = 0; i < 54; i++)
     td[i].textContent = '';
   dbx.style.display = "none";
-    wrapperdb.style.display = "none";
+  wrapperdb.style.display = "none";
 }
 
 function no() {
   dbx.style.display = "none";
-    wrapperdb.style.display = "none";
+  wrapperdb.style.display = "none";
 }
 
 //logic-starts
@@ -319,7 +336,7 @@ function checkwin() {
       g++;
   }
   if (r == 0)
-    console.log("g");
+  {  greenw(); }
   if (g == 0)
-    console.log("r");
+  {  redw();}
 }
