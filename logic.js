@@ -76,16 +76,18 @@ function greenw() {
 }
 
 function reset() {
+
   red.style.display = "none";
   green.style.display = "none";
   wrapperdb2.style.display = "none";
   wrapperdb3.style.display = "none";
   dbx.style.display = "block";
   wrapperdb.style.display = "block";
+
 }
 
 function yes() {
-  chance = 0;
+  chance = 0;x=0;y=0;chancer=0;table.style.border = "red";
   for (var i = 0; i < 54; i++)
     td[i].textContent = '';
   dbx.style.display = "none";
@@ -395,7 +397,7 @@ function play2(x, y) {
   }
   checkwin();
 }
-
+checkwin();
 function checkwin() {
   var r = 0;
   var g = 0;
