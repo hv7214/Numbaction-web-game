@@ -264,7 +264,8 @@ function play(x, y) {
         }
       }
     }
-    chance++;checkwin();
+    
+    chance++;
   }
 }
 //chain function
