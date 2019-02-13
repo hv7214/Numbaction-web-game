@@ -87,7 +87,7 @@ function reset() {
 }
 
 function yes() {
-  chance = 0;x=0;y=0;chancer=0;table.style.border = "red";
+  chance = 0;x=0;y=0;chancer=0;table.style.border = "red";tdborderred();
   for (var i = 0; i < 54; i++)
     td[i].textContent = '';
   dbx.style.display = "none";
@@ -397,7 +397,7 @@ function play2(x, y) {
   }
   checkwin();
 }
-checkwin();
+
 function checkwin() {
   var r = 0;
   var g = 0;
@@ -407,10 +407,10 @@ function checkwin() {
     if (td[i].style.color === "green")
       g++;
   }
-  if (r == 0) {
+  if (r == 0 && g!=0 && chance!=1) {
     greenw();
   }
-  if (g == 0) {
+  if (g == 0 && r!=0 && chance!=1) {
     redw();
   }
 }
