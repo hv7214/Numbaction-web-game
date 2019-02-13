@@ -262,7 +262,7 @@ function play(x, y) {
         }
       }
     }
-    chance++;
+    chance++;checkwin();
   }
 }
 //chain function
