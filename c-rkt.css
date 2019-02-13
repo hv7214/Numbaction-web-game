@@ -110,6 +110,7 @@ body {
   margin: 0;
   background-image: url(./bg.jpeg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .table{
   padding-top: 30px;
@@ -118,18 +119,18 @@ table {
   position: relative;
   min-width: 40%;
   min-height: 100%;
-  border: 2px solid white;
+  border: 5px solid red;
   empty-cells: show;
 }
 
 td {
-  border: 1px solid white;
+
   height: 100px;
   width: 50px;
   text-align: center;
   font-size: 50px;
   color: red;
-  border: 2px solid white;
+  border: 2px solid red;
 }
 
 .container {
@@ -159,13 +160,15 @@ td {
   padding-top: 10px;
   position: relative;
   padding-left: 100px;
-  padding-right: 50px;
+  padding-right: 40px;
 }
 
 .ins {
+  padding-top: 10px;padding-right: 40px;
+}
+.undo {
   padding-top: 10px;
 }
-
 .txt {
   padding: 0px;
   color: white;
@@ -191,5 +194,15 @@ td {
   border-bottom-width: 10px;
 }
 #ins:hover{
+  background-color: grey;
+}
+#undo {
+  border-radius: 40px;
+  width: 140px;
+  height: 60px;
+  font-size: 120%;
+  border-bottom-width: 10px;
+}
+#undo:hover{
   background-color: grey;
 }
